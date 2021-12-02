@@ -97,6 +97,22 @@ body{
     position: relative;
     max-width: 400px;
 }
+.slider-buttons{
+    position: absolute;
+    right: 46px;
+    bottom: 40px;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: space-between;
+}
+.slider-button{
+    cursor: pointer;
+}
+.swiper{
+    position: relative;
+}
 .slide-title{
     margin-top: 0;
     margin-bottom: 15px;
@@ -133,6 +149,24 @@ body{
     url("../img/summer.png") no-repeat / cover;*/
     
     background-image: url("../img/summer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.slide-autumn {
+   /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%),
+    url("../img/summer.png") no-repeat / cover;*/
+    
+    background-image: url("../img/autumn.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.slide-vitamin{
+   /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%),
+    url("../img/summer.png") no-repeat / cover;*/
+    
+    background-image: url("../img/vitamin.png");
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -386,6 +420,7 @@ body{
 }
 .benefits-content{
     margin-top: 50px;
+
 }
 .benefits-card{
     background: #FFFFFF;
@@ -393,11 +428,20 @@ body{
     box-sizing: border-box;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
     border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
 }
 .tabs-figures{
     width: 60px;
     /* height: 60px; */
-    margin: 30px 105px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.tabs-figures-3{
+    margin-top: 10px;
 }
 .tabs-title-text{
     margin-top: 4px;
@@ -452,4 +496,64 @@ body{
 .social-link{
     margin-left: 20px;
     text-decoration: none;
+}
+
+@media (max-width: 1260px){
+    .container{
+        max-width: 960px;
+    }
+    .search-form{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .tabs-content{
+        flex-wrap: wrap;
+    }
+    .tabs-card{
+        flex: 50%;
+        max-width: calc(50% - 40px);
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width:750px;
+    }
+    .slide{
+        padding: 70px;
+    }
+    .delivery-card{
+        width: calc(50% - 40px);
+    }
+    .footer-logo{
+        margin-right: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .container{
+        max-width: 560px;
+    }
+    .header{
+        flex-wrap: wrap;
+    }
+    .search-form{
+        order: 5;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .promo{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 576px) {
+    .container{
+        max-width:90%;
+    }
+    .delivery-card{
+        max-width: 100%;
+    }
+    .tabs-card{
+        max-width: 100%;
+    }
 }
