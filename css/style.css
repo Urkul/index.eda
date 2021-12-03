@@ -555,7 +555,7 @@ body{
 }
 @media (max-width: 576px) {
     .container{
-        max-width:90%;
+        max-width:98%;
     }
     .slide-title {
         font-size: 35px;
@@ -573,7 +573,7 @@ body{
         max-width: 100%;
     }
     .tabs{
-         flex-wrap: wrap;
+        flex-wrap: wrap;
     }
     .tabs-card{
         max-width: 100%;
