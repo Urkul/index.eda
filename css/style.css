@@ -541,6 +541,13 @@ body{
         margin-right: 0;
         margin-top: 15px;
         margin-bottom: 15px;
+        min-width: 320px;
+    }
+    .slide-title {
+        font-size: 45px;
+    }
+    .slide-text {
+        font-size: 15px;
     }
     .promo{
         flex-wrap: wrap;
@@ -550,10 +557,48 @@ body{
     .container{
         max-width:90%;
     }
+    .slide-title {
+        font-size: 35px;
+    }
+    .slide-text {
+        font-size: 14px;
+    }
+    .search-form {
+        min-width: 160px;
+    }
+    .section-title{
+        font-size: 20px;
+    }
     .delivery-card{
         max-width: 100%;
     }
+    .tabs{
+         flex-wrap: wrap;
+    }
     .tabs-card{
         max-width: 100%;
+    }
+    .button-center{
+        max-width: 200px;
+    }
+    .delivery-card {
+        width: 100%;
+    }
+    .footer-wrapper{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-nav{
+        margin: 30px 0;
+    }
+    .footer-logo{
+        margin-right: 0;
+    }
+    .footer-link{
+        margin: 0;
+    }
+    .social-links{
+        margin: auto;
     }
 }
